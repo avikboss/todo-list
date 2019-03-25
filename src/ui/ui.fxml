@@ -16,21 +16,17 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <Pane prefHeight="500.0" prefWidth="275.0">
+      <Pane prefHeight="500.0" prefWidth="275.0" style="-fx-background-color: #ffffff;">
          <children>
             <Button fx:id="addButton" layoutX="9.0" layoutY="14.0" mnemonicParsing="false" onAction="#addTodo" text="Add Todo" />
-            <ScrollPane layoutY="69.0" prefHeight="432.0" prefWidth="275.0">
+            <ScrollPane fx:id="scrollPane" focusTraversable="false" hbarPolicy="NEVER" layoutY="69.0" prefHeight="432.0" prefWidth="275.0" style="-fx-focus-color: transparent; -fx-faint-focus-color: transparent;" vbarPolicy="ALWAYS">
                <content>
-                  <GridPane fx:id="todoGrid" prefHeight="411.0" prefWidth="272.0">
+                  <GridPane fx:id="todoGrid" prefHeight="411.0" prefWidth="255.0">
                     <columnConstraints>
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                     </columnConstraints>
                     <rowConstraints>
                       <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
-                      <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
-                      <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                   </GridPane>
                </content>
