@@ -1,0 +1,12 @@
+.grid {
+    -fx-border-width: 2px;
+    -fx-border-color: blue;
+    -fx-border-radius: 5px;
+    -fx-background-color: white;
+}
+
+.scroll-pane {
+    -fx-border-color: white;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
