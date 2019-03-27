@@ -120,7 +120,7 @@ public class Controller {
             i.printStackTrace();
             return false;
         } catch (ClassNotFoundException c) {
-            System.out.println("List class not found");
+            System.out.println("TodoList class not found");
             c.printStackTrace();
             return false;
         }
